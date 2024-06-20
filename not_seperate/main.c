@@ -309,7 +309,7 @@ int main(void)
     }
 
     
-    //水平用下面
+    //鉛直用下面
     // 處理圖像（垂直鏡像）
     //verticalFlip(pixels, width, height, bytesPerPixel);
 
@@ -320,7 +320,7 @@ int main(void)
     //free(pixels);
 
     
-    //鉛直用下面
+    //水平用下面
     //horizontalFlip(pixels, width, height, bytesPerPixel);
 
     //writeImage("img3.bmp", pixels, width, height, bytesPerPixel);
