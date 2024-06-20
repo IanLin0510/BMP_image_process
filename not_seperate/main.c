@@ -1,4 +1,3 @@
-
 //引入標頭檔案以使用標準輸入/輸出、動態記憶體分配、布爾型別和數學函數。
 //定義常數以表示 BMP 文件頭和資訊頭的偏移量和大小。
 //定義自訂資料型別以提高程式碼可讀性。
@@ -168,7 +167,7 @@ void writeImage(const char *fileName, uchar *pixels, uint32 width, uint32 height
 //垂直鏡像圖像，通過從頂部到底部交換行來實現。
 //迭代圖像高度的一半，交換每行像素與其對應的底部行。
 
-void imageProcessing(uchar *pixels, uint32 width, uint32 height, uint32 bytesPerPixel)
+void verticalFlip(uchar *pixels, uint32 width, uint32 height, uint32 bytesPerPixel)
 {
     int unpaddedRowSize = width * bytesPerPixel;
     uchar tempPixel;
@@ -312,7 +311,7 @@ int main(void)
     
     //水平用下面
     // 處理圖像（垂直鏡像）
-    //imageProcessing(pixels, width, height, bytesPerPixel);
+    //verticalFlip(pixels, width, height, bytesPerPixel);
 
     // 寫入處理後的圖像
     //writeImage("img2.bmp", pixels, width, height, bytesPerPixel);
